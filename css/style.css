@@ -1,0 +1,27 @@
+#nav {
+    display: inline;
+    list-style-type: none;
+    color: blue;
+    font-weight: bold;
+}
+
+#high-score {
+    text-align: left;
+}
+
+#timer {
+    text-align: right;
+}
+
+#container {
+    margin: auto;
+    width: 40%;
+   
+}
+
+.hide {
+    display: none;
+}
+
+
+

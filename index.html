@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title> 
+<!--link to css-->
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<!--link to bootstrap-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <nav id="nav">
+        <div id="highscore">View Highscores</div>
+        <div id="timer">Time:<span id="timer-display">0</span></div>
+    </nav>
+
+    <!--container-->
+    <div id="container">
+        <!--start quiz page-->
+        <div id="start-screen" class="start">
+            <h1 id="coding-quiz-challenge">Coding Quiz Challenge</h1>
+            <p id="intro">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your time by 10 seconds!</p>
+            <button class="btn btn-primary hide" id="start-button">Start Quiz</button>
+        </div>
+
+        <!--quiz questions-->
+        <div id="question-page" class="hide">
+            <p id="questions" class="hide"></p>
+            <div class = "buttons"></div>
+        </div>
+
+        <!--score page-->
+        <div id="scores" class="hide">
+            <h2 id="done-header">All done!</h2>
+            <!--row with form and submit button-->
+            <p id="score-total"></p>
+            <div class="row">
+                <form id="submit-score">
+                    <input id="initials-input" placeholder="initials"> 
+                    <button id="submit-button" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+        </div>
+
+        <!--high scores-->
+        <div id ="high-scores" class="hide start">
+        <h2>Highscores</h2>
+        <form id="high-scores-form">
+             <input id="high-scores-input"> 
+                <div class="row">
+                    <button class="btn btn-primary" id="go-back">Go Back</button>
+                    <button class="btn btn-primary" id="clear-high-scores">Clear High Scores</button>
+                </div>
+        </form>
+        </div>
+    </div>
+
+   <!--link to javascript-->
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+
